@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Prático</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="info">Projeto Prático - Cena 3D Interativa</div>
+
+  <div id="controls">
+    <strong>Controles:</strong><br />
+    -> <b>Botão esquerdo do mouse:</b> Rotacionar<br />
+    -> <b>Botão direito:</b> Mover<br />
+    -> <b>Scroll:</b> Zoom<br />
+    -> <b>Tecla R:</b> Resetar câmera<br />
+    -> <b>Tecla Espaço:</b> Pausar/Retomar Animação
+
+    <div id="extraControls">
+      <label><input type="checkbox" id="toggleAxes" checked /> Mostrar Eixos</label>
+      <br />
+      <button id="toggleShadows">Alternar Sombras</button><br />
+      <label>Cores dos Objetos</label><br />
+      <input type="color" id="colorCube" value="#ff0000" />
+      <input type="color" id="colorSphere" value="#00ff00" />
+      <input type="color" id="colorCylinder" value="#0000ff" /><br />
+
+      <label>Luz Direcional</label><br />
+
+      <input type="range" id="lightPosX" class="slider" min="-10" max="10" value="5" />
+      <input type="range" id="lightPosY" class="slider" min="-10" max="10" value="10" />
+      <input type="range" id="lightPosZ" class="slider" min="-10" max="10" value="7" />
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
